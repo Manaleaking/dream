@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script src="/javascripts/jquery-1.11.2.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css" media="screen"/>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<p>Welcome to <%= title %></p>
+
+<div class="container-fluid">
+    <form method="post">
+        <fieldset>
+            <legend>用户登陆</legend>
+            <div class="control-group">
+                <label class="control-label" for="username">用户名</label>
+
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="username" name="username">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="password">密码</label>
+
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="password" name="password">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">登陆</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
